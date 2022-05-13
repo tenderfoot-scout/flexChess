@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/originals/ca/cc/77/cacc77b15424a4540112e61bab0baa69.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("https://media.istockphoto.com/photos/black-wood-texture-background-old-panels-wooden-texture-picture-id958635646?k=20&m=958635646&s=612x612&w=0&h=SeVW4d3tpNzPxtneTR5QKnuC2FhuvS8KNfgBTLjBy0Q=");
+}
+
+.nav-item {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  color: white;
+}
+
+.image {
+  width: 80px;
+  border-radius: 40px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.board {
+  position: relative;
+  top: 100px;
+  margin: auto;
+  width: 100vw;
+  height: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 480px;
+  max-height: 480px;
+  -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.85);
+          box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.85);
+  font-size: 0;
+  background-image: url("https://img.freepik.com/free-photo/luxury-white-marble-texture-background-decorative-design-pattern-art-work-marble-with-high-resolution_24076-876.jpg");
+}
+
+.box {
+  width: 12.5%;
+  height: 12.5%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.box:nth-child(n+1):nth-child(-n+16) {
+  color: #201e1e;
+}
+
+.box:nth-child(n+49):nth-child(-n+64) {
+  color: #ed0909;
+}
+
+.board .box:nth-child(n+1):nth-child(-n+8):nth-child(even),
+.board .box:nth-child(n+9):nth-child(-n+16):nth-child(odd),
+.board .box:nth-child(n+17):nth-child(-n+25):nth-child(even),
+.board .box:nth-child(n+25):nth-child(-n+32):nth-child(odd),
+.board .box:nth-child(n+33):nth-child(-n+40):nth-child(even),
+.board .box:nth-child(n+41):nth-child(-n+48):nth-child(odd),
+.board .box:nth-child(n+49):nth-child(-n+56):nth-child(even),
+.board .box:nth-child(n+57):nth-child(-n+64):nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=styles.css.map */
