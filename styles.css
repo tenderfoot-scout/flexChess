@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300;700&family=Qwitcher+Grypen&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,26 +6,38 @@
           box-sizing: border-box;
 }
 
-body {
-  background-image: url("https://i.pinimg.com/originals/ca/cc/77/cacc77b15424a4540112e61bab0baa69.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+@media (min-width: 1024px) {
+  body {
+    background-image: url("https://i.pinimg.com/originals/ca/cc/77/cacc77b15424a4540112e61bab0baa69.jpg");
+    background-size: 100%;
+  }
 }
 
+@media (max-width: 1024px) {
+  body {
+    background-image: url("https://w0.peakpx.com/wallpaper/135/982/HD-wallpaper-hogwarts-legacy-harry-harry-potter-potter.jpg");
+    background-size: 100%;
+  }
+}
+
+/* Nav */
 .navbar {
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 1%;
   background-image: url("https://media.istockphoto.com/photos/black-wood-texture-background-old-panels-wooden-texture-picture-id958635646?k=20&m=958635646&s=612x612&w=0&h=SeVW4d3tpNzPxtneTR5QKnuC2FhuvS8KNfgBTLjBy0Q=");
 }
 
 .nav-item {
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
+  text-align: center;
   color: white;
 }
 
@@ -36,6 +49,16 @@ body {
   border-width: 2px;
 }
 
+.logo {
+  width: 80px;
+}
+
+h2 {
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 28px;
+}
+
+/* Chessboard */
 .board {
   position: relative;
   top: 100px;
@@ -52,22 +75,8 @@ body {
   -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.85);
           box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.85);
   font-size: 0;
+  border: 10px solid #1c1b1b;
   background-image: url("https://img.freepik.com/free-photo/luxury-white-marble-texture-background-decorative-design-pattern-art-work-marble-with-high-resolution_24076-876.jpg");
-}
-
-.box {
-  width: 12.5%;
-  height: 12.5%;
-  font-size: 30px;
-  text-align: center;
-}
-
-.box:nth-child(n+1):nth-child(-n+16) {
-  color: #201e1e;
-}
-
-.box:nth-child(n+49):nth-child(-n+64) {
-  color: #ed0909;
 }
 
 .board .box:nth-child(n+1):nth-child(-n+8):nth-child(even),
@@ -79,5 +88,21 @@ body {
 .board .box:nth-child(n+49):nth-child(-n+56):nth-child(even),
 .board .box:nth-child(n+57):nth-child(-n+64):nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box {
+  width: 12.5%;
+  height: 12.5%;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Chess pieces */
+.box:nth-child(n+1):nth-child(-n+16) {
+  color: #201e1e;
+}
+
+.box:nth-child(n+49):nth-child(-n+64) {
+  color: #ed0909;
 }
 /*# sourceMappingURL=styles.css.map */
